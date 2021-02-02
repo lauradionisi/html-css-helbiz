@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/* utility */
+
+.container_1000 {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* menu nav */
+.header-top {
+overflow: hidden;
+background-color: white;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+
+nav {
+  padding: 15px;
+}
+
+i.fas.fa-bars {
+  display: none;
+}
+.logo_helbiz {
+  margin-top: 15px;
+}
+.menu_inline {
+  list-style: none;
+}
+.menu_inline li {
+  display: inline;
+  margin-left: 8px;
+}
+.menu_inline li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+li.lang {
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+
+/* banner */
+.jumbo.container {
+  position: relative;
+  height: auto;
+}
+.jumbo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 200%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.jumbo img,
+.banner-2 img {
+  max-width: 100%;
+}
+/* sezione due monopattini */
+
+section.container_1000 {
+  height: 500px;
+}
+
+.col-lg-6.helbizgo,
+.col-lg-6.helbizbike {
+  position: relative;
+  background-color: #fafafa;
+}
+
+.helbizgo-text img,
+.helbizbike-text img {
+  width: 50%;
+  height: auto;
+}
+
+.helbizgo-text,
+.helbizbike-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 200%;
+}
+.helbizgo-text a,
+.helbizbike-text a{
+  text-decoration: none;
+  color: blue;
+}
+
+#monopattino-1,
+#monopattino-2 {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* sezione step 1 */
+
+.banner-2.container {
+  position: relative;
+  height: auto;
+
+  margin-top: 30px;
+}
+
+
+/* media query tablet */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+  .jumbo img,
+  .banner-2 img {
+    max-width: 100%;
+  }
+  
+  i.fas.fa-bars {
+    display: inline;
+    font-size: 20px;
+    float: right;
+  }
+
+  .menu_inline {
+    display: none;
+  }
+
+  .jumbo-text {
+    text-align: center;
+    font-size: 15px;
+
+  }
+}
+/* media query smartphone */
+
+@media screen and (max-width: 768px)  {
+
+  .jumbo img,
+  .banner-2 img {
+    max-width: 100%;
+  }
+
+  i.fas.fa-bars {
+    display: inline;
+    font-size: 20px;
+    float: right;
+  }
+  .menu_inline {
+    display: none;
+  }
+  .jumbo-text {
+    line-height: normal;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .col-xs-12.helbizgo {
+    height: 700px;
+    margin-top: 30px;
+  }
+  .col-xs-12.helbizbike {
+    height: 700px;
+    margin-top: 20px;
+  }
+}
