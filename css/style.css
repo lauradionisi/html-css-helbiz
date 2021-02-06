@@ -118,14 +118,27 @@ section.container_1000 {
 
 /* sezione step 1 */
 
-.banner-2.container {
-  position: relative;
-  height: auto;
-
+#banner-2 {
+  background-image: url("../img/HelbizBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
   margin-top: 30px;
 }
 
+.text_margin {
+  margin-top: 530px;
+}
+.phone_margin {
+  margin-top: 350px;
+}
+#iphone {
+  width: 70%;
+}
 
+.col-lg-4.iphone {
+  text-align: center;
+}
 /* media query tablet */
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
@@ -133,13 +146,18 @@ section.container_1000 {
   .banner-2 img {
     max-width: 100%;
   }
-  
+  .jumbo-text img {
+    width: 30px;
+  }
   i.fas.fa-bars {
     display: inline;
     font-size: 20px;
     float: right;
   }
 
+  .text {
+    display: none;
+  }
   .menu_inline {
     display: none;
   }
@@ -147,15 +165,13 @@ section.container_1000 {
   .jumbo-text {
     text-align: center;
     font-size: 15px;
-
   }
 }
 /* media query smartphone */
 
 @media screen and (max-width: 768px)  {
 
-  .jumbo img,
-  .banner-2 img {
+  .jumbo img {
     max-width: 100%;
   }
 
@@ -171,6 +187,10 @@ section.container_1000 {
     line-height: normal;
     text-align: center;
     font-size: 15px;
+  }
+
+  .text {
+    display: none;
   }
 
   .col-xs-12.helbizgo {
